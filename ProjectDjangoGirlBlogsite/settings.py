@@ -25,6 +25,7 @@ SECRET_KEY = 'django-insecure-h_o2!f#+5ue=8c55#p192w_yf3o5#0l1&%2v0)$ves9j5-#e@0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# When DEBUG is True, ALLOWED_HOSTS is empty.
 ALLOWED_HOSTS = []
 
 
@@ -104,7 +105,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -115,6 +116,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
