@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+
+def post_listing(request):
+    return render(request, "DjangoGirlBlogApp/post_listing.html", {})
