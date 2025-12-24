@@ -4,7 +4,7 @@ from .models import Post
 
 
 def post_listing(request):
-    posts = Post.objects.filter(
-        published_date__lte=timezone.now().order_by("published_date")
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by(
+        "published_date"
     )
-    return render(request, "DjangoGirlBlogApp/post_listing.html", {posts})
+    return render(request, "DjangoGirlBlogApp/post_listing.html", {"posts": posts})
